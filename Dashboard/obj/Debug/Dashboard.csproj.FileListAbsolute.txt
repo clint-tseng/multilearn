@@ -1,0 +1,38 @@
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\bin\Debug\Ionic.Zip.dll
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\bin\Debug\Ionic.Zip.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.ContainerForm.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.FilteredSetSelect.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.NewSet.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\Admin.UI.SpellingContentManager.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.MultipleChoiceSetEditor.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.SpellingSetEditor.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.StatisticsViewer.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.ContainerForm.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.FilteredSetSelect.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.MultipleChoiceSetEditor.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.NewSet.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\Admin.UI.SpellingContentManager.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.SpellingSetEditor.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\MultiLearn.Dashboard.UI.StatisticsViewer.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.Cache
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\bin\Debug\Common.dll
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\bin\Debug\Ionic.Zip.dll
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\bin\Debug\Ionic.Zip.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Dashboard\bin\Debug\Common.pdb

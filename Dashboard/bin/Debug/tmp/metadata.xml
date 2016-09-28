@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<QuestionSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="tryingagain" type="MultipleChoice">
+  <Questions>
+    <MultipleChoiceQuestion ID="0">
+      <PictureGuid>b5a9447f-dd03-4d73-8951-a03b9838f234</PictureGuid>
+      <Question>New Question</Question>
+      <Answers>
+        <string>lsdhf</string>
+        <string>laksgflk</string>
+        <string>lsakflsdkn</string>
+      </Answers>
+    </MultipleChoiceQuestion>
+  </Questions>
+</QuestionSet>

@@ -1,0 +1,65 @@
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\bin\Debug\MultiMath.exe.config
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\bin\Debug\MultiMath.exe
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\bin\Debug\MultiMath.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\bin\Debug\Ionic.Zip.dll
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\bin\Debug\Ionic.Zip.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMath.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathPanel.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiSpell.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiSpellPanel.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.KeypadForm.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.KeypadSync.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.KeypadSyncPanel.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.NumberOfPlayers.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Login.AvatarPanel.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Login.LoginPanel.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Properties.Resources.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.GameSelect.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.InputSelect.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.StudentLogin.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.SetSelect.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Utilities.Flash.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Utilities.ProgressBar.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiMath.exe
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiMath.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.PostGame.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathTeamScoring.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathCoercionPanel.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathTeamCoercion.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\bin\Debug\MultiMath.exe.config
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiMath.exe
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiMath.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\bin\Debug\MultiMath.exe
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\bin\Debug\MultiMath.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\bin\Debug\Common.dll
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\bin\Debug\Ionic.Zip.dll
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\bin\Debug\Ionic.Zip.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\bin\Debug\Common.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathCoercionPanel.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathTeamScoring.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMath.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathPanel.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMathTeamCoercion.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiSpell.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiSpellPanel.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.KeypadForm.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.KeypadSync.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.KeypadSyncPanel.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Input.NumberOfPlayers.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Login.AvatarPanel.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Login.LoginPanel.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Properties.Resources.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.GameSelect.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.InputSelect.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.StudentLogin.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.PostGame.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.UI.SetSelect.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Utilities.Flash.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Utilities.ProgressBar.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.csproj.GenerateResource.Cache
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\MultiMath\obj\Debug\MultiLearn.Games.MultiMultiMath.resources

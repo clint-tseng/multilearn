@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MultiLearn.Data.Log.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="MultiLearnDataLogStoreContainer">
+          <EntitySet Name="classes" EntityType="MultiLearn.Data.Log.Store.classes" store:Type="Tables" />
+          <EntitySet Name="keystrokes" EntityType="MultiLearn.Data.Log.Store.keystrokes" store:Type="Tables" />
+          <EntitySet Name="multichoice_questions" EntityType="MultiLearn.Data.Log.Store.multichoice_questions" store:Type="Tables" />
+          <EntitySet Name="multimath_questions" EntityType="MultiLearn.Data.Log.Store.multimath_questions" store:Type="Tables" />
+          <EntitySet Name="multispell_mistakes" EntityType="MultiLearn.Data.Log.Store.multispell_mistakes" store:Type="Tables" />
+          <EntitySet Name="multispell_questions" EntityType="MultiLearn.Data.Log.Store.multispell_questions" store:Type="Tables" />
+          <EntitySet Name="sessions" EntityType="MultiLearn.Data.Log.Store.sessions" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="MultiLearn.Data.Log.Store.users" store:Type="Tables" />
+          <EntitySet Name="users_sessions" EntityType="MultiLearn.Data.Log.Store.users_sessions" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="classes">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="keystrokes">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="question_id" Type="integer" Nullable="false" />
+          <Property Name="user_id" Type="integer" Nullable="false" />
+          <Property Name="keycode" Type="integer" Nullable="false" />
+        </EntityType>
+        <EntityType Name="multichoice_questions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="integer" Nullable="false" />
+          <Property Name="session_id" Type="integer" Nullable="false" />
+          <Property Name="difficulty" Type="float" Nullable="false" />
+          <Property Name="questionset_name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="question_id" Type="integer" Nullable="false" />
+          <Property Name="number" Type="integer" Nullable="false" />
+          <Property Name="answer" Type="integer" />
+          <Property Name="correct" Type="bit" />
+          <Property Name="start" Type="datetime" Nullable="false" />
+          <Property Name="end" Type="datetime" />
+        </EntityType>
+        <EntityType Name="multimath_questions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="integer" Nullable="false" />
+          <Property Name="session_id" Type="integer" Nullable="false" />
+          <Property Name="number" Type="integer" Nullable="false" />
+          <Property Name="difficulty" Type="integer" Nullable="false" />
+          <Property Name="x" Type="integer" Nullable="false" />
+          <Property Name="operand" Type="nvarchar" Nullable="false" MaxLength="8" />
+          <Property Name="y" Type="integer" Nullable="false" />
+          <Property Name="answer" Type="integer" />
+          <Property Name="correct" Type="bit" />
+          <Property Name="start" Type="datetime" Nullable="false" />
+          <Property Name="end" Type="datetime" />
+          <Property Name="user_2_id" Type="integer" />
+        </EntityType>
+        <EntityType Name="multispell_mistakes">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="question_id" Type="integer" Nullable="false" />
+          <Property Name="word" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="index" Type="integer" Nullable="false" />
+          <Property Name="attempt" Type="nvarchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="multispell_questions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="integer" Nullable="false" />
+          <Property Name="session_id" Type="integer" Nullable="false" />
+          <Property Name="difficulty" Type="float" Nullable="false" />
+          <Property Name="word" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="mistakes" Type="integer" />
+          <Property Name="number" Type="integer" Nullable="false" />
+          <Property Name="correct" Type="bit" />
+          <Property Name="start" Type="datetime" Nullable="false" />
+          <Property Name="end" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sessions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="timestamp" Type="datetime" Nullable="false" />
+          <Property Name="winner_user_id" Type="integer" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="pin" Type="integer" Nullable="false" />
+          <Property Name="last_logged_in" Type="datetime" />
+          <Property Name="name" Type="nvarchar" MaxLength="256" />
+          <Property Name="class_id" Type="integer" />
+        </EntityType>
+        <EntityType Name="users_sessions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="integer" Nullable="false" />
+          <Property Name="session_id" Type="integer" Nullable="false" />
+          <Property Name="correct" Type="integer" Nullable="false" />
+          <Property Name="total" Type="integer" Nullable="false" />
+          <Property Name="start_difficulty" Type="float" Nullable="false" />
+          <Property Name="end_difficulty" Type="float" />
+          <Property Name="color" Type="nvarchar" MaxLength="64" />
+          <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MultiLearn.Data.Log" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="SqliteLog">
+          <EntitySet Name="UserClassSet" EntityType="MultiLearn.Data.Log.UserClass" />
+          <EntitySet Name="MultiChoiceQuestionSet" EntityType="MultiLearn.Data.Log.MultiChoiceQuestion" />
+          <EntitySet Name="MultiMathQuestionSet" EntityType="MultiLearn.Data.Log.MultiMathQuestion" />
+          <EntitySet Name="MultiSpellMistakeSet" EntityType="MultiLearn.Data.Log.MultiSpellMistake" />
+          <EntitySet Name="MultiSpellQuestionSet" EntityType="MultiLearn.Data.Log.MultiSpellQuestion" />
+          <EntitySet Name="SessionSet" EntityType="MultiLearn.Data.Log.Session" />
+          <EntitySet Name="LogUserSet" EntityType="MultiLearn.Data.Log.LogUser" />
+          <EntitySet Name="UserSessionSet" EntityType="MultiLearn.Data.Log.UserSession" />
+          <EntitySet Name="KeystrokesSet" EntityType="MultiLearn.Data.Log.Keystrokes" /></EntityContainer>
+        <EntityType Name="UserClass">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MultiChoiceQuestion">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="session_id" Type="Int64" Nullable="false" />
+          <Property Name="difficulty" Type="Double" Nullable="false" />
+          <Property Name="questionset_name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="question_id" Type="Int64" Nullable="false" />
+          <Property Name="number" Type="Int64" Nullable="false" />
+          <Property Name="answer" Type="Int64" />
+          <Property Name="correct" Type="Boolean" />
+          <Property Name="start" Type="DateTime" Nullable="false" />
+          <Property Name="end" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="MultiMathQuestion">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="session_id" Type="Int64" Nullable="false" />
+          <Property Name="number" Type="Int64" Nullable="false" />
+          <Property Name="difficulty" Type="Int64" Nullable="false" />
+          <Property Name="x" Type="Int64" Nullable="false" />
+          <Property Name="operand" Type="String" Nullable="false" MaxLength="8" Unicode="true" FixedLength="false" />
+          <Property Name="y" Type="Int64" Nullable="false" />
+          <Property Name="answer" Type="Int64" />
+          <Property Name="correct" Type="Boolean" />
+          <Property Name="start" Type="DateTime" Nullable="false" />
+          <Property Name="end" Type="DateTime" />
+          <Property Name="user_2_id" Type="Int64" Nullable="true" /></EntityType>
+        <EntityType Name="MultiSpellMistake">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="question_id" Type="Int64" Nullable="false" />
+          <Property Name="word" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="index" Type="Int64" Nullable="false" />
+          <Property Name="attempt" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MultiSpellQuestion">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="session_id" Type="Int64" Nullable="false" />
+          <Property Name="difficulty" Type="Double" Nullable="false" />
+          <Property Name="word" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="mistakes" Type="Int64" />
+          <Property Name="number" Type="Int64" Nullable="false" />
+          <Property Name="correct" Type="Boolean" />
+          <Property Name="start" Type="DateTime" Nullable="false" />
+          <Property Name="end" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="timestamp" Type="DateTime" Nullable="false" />
+          <Property Name="winner_user_id" Type="Int64" />
+        </EntityType>
+        <EntityType Name="LogUser">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="Int64" Nullable="false" />
+          <Property Name="pin" Type="Int64" Nullable="false" />
+          <Property Name="last_logged_in" Type="DateTime" />
+          <Property Name="name" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="class_id" Type="Int64" />
+        </EntityType>
+        <EntityType Name="UserSession">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="session_id" Type="Int64" Nullable="false" />
+          <Property Name="correct" Type="Int64" Nullable="false" />
+          <Property Name="total" Type="Int64" Nullable="false" />
+          <Property Name="start_difficulty" Type="Double" Nullable="false" />
+          <Property Name="end_difficulty" Type="Double" />
+          <Property Name="color" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Keystrokes">
+          <Key>
+            <PropertyRef Name="id" /></Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="question_id" Type="Int64" Nullable="false" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="keycode" Type="Int64" Nullable="false" /></EntityType></Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="MultiLearnDataLogStoreContainer" CdmEntityContainer="SqliteLog">
+          <EntitySetMapping Name="UserClassSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.UserClass)">
+              <MappingFragment StoreEntitySet="classes">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MultiChoiceQuestionSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.MultiChoiceQuestion)">
+              <MappingFragment StoreEntitySet="multichoice_questions">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="session_id" ColumnName="session_id" />
+                <ScalarProperty Name="difficulty" ColumnName="difficulty" />
+                <ScalarProperty Name="questionset_name" ColumnName="questionset_name" />
+                <ScalarProperty Name="question_id" ColumnName="question_id" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="answer" ColumnName="answer" />
+                <ScalarProperty Name="correct" ColumnName="correct" />
+                <ScalarProperty Name="start" ColumnName="start" />
+                <ScalarProperty Name="end" ColumnName="end" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MultiMathQuestionSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.MultiMathQuestion)">
+              <MappingFragment StoreEntitySet="multimath_questions">
+                <ScalarProperty Name="user_2_id" ColumnName="user_2_id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="session_id" ColumnName="session_id" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="difficulty" ColumnName="difficulty" />
+                <ScalarProperty Name="x" ColumnName="x" />
+                <ScalarProperty Name="operand" ColumnName="operand" />
+                <ScalarProperty Name="y" ColumnName="y" />
+                <ScalarProperty Name="answer" ColumnName="answer" />
+                <ScalarProperty Name="correct" ColumnName="correct" />
+                <ScalarProperty Name="start" ColumnName="start" />
+                <ScalarProperty Name="end" ColumnName="end" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MultiSpellMistakeSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.MultiSpellMistake)">
+              <MappingFragment StoreEntitySet="multispell_mistakes">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="question_id" ColumnName="question_id" />
+                <ScalarProperty Name="word" ColumnName="word" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="attempt" ColumnName="attempt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MultiSpellQuestionSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.MultiSpellQuestion)">
+              <MappingFragment StoreEntitySet="multispell_questions">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="session_id" ColumnName="session_id" />
+                <ScalarProperty Name="difficulty" ColumnName="difficulty" />
+                <ScalarProperty Name="word" ColumnName="word" />
+                <ScalarProperty Name="mistakes" ColumnName="mistakes" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="correct" ColumnName="correct" />
+                <ScalarProperty Name="start" ColumnName="start" />
+                <ScalarProperty Name="end" ColumnName="end" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SessionSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.Session)">
+              <MappingFragment StoreEntitySet="sessions">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="winner_user_id" ColumnName="winner_user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LogUserSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.LogUser)">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="pin" ColumnName="pin" />
+                <ScalarProperty Name="last_logged_in" ColumnName="last_logged_in" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="class_id" ColumnName="class_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserSessionSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.UserSession)">
+              <MappingFragment StoreEntitySet="users_sessions">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="session_id" ColumnName="session_id" />
+                <ScalarProperty Name="correct" ColumnName="correct" />
+                <ScalarProperty Name="total" ColumnName="total" />
+                <ScalarProperty Name="start_difficulty" ColumnName="start_difficulty" />
+                <ScalarProperty Name="end_difficulty" ColumnName="end_difficulty" />
+                <ScalarProperty Name="color" ColumnName="color" />
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KeystrokesSet">
+            <EntityTypeMapping TypeName="IsTypeOf(MultiLearn.Data.Log.Keystrokes)">
+              <MappingFragment StoreEntitySet="keystrokes">
+                <ScalarProperty Name="keycode" ColumnName="keycode" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="question_id" ColumnName="question_id" />
+                <ScalarProperty Name="id" ColumnName="id" /></MappingFragment></EntityTypeMapping></EntitySetMapping></EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="SqliteLog">
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.UserClass" Width="1.5" PointX="0.75" PointY="0.75" Height="1.2636116536458335" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.MultiChoiceQuestion" Width="1.5" PointX="2.75" PointY="0.75" Height="2.7427376302083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.MultiMathQuestion" Width="1.5" PointX="4.75" PointY="0.75" Height="2.9070849609374996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.MultiSpellMistake" Width="1.5" PointX="0.75" PointY="4.75" Height="1.7566536458333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.MultiSpellQuestion" Width="1.5" PointX="2.75" PointY="4.75" Height="2.5783902994791674" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.Session" Width="1.5" PointX="4.75" PointY="4.75" Height="1.4279589843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.LogUser" Width="1.5" PointX="6.75" PointY="0.75" Height="1.7566536458333333" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.UserSession" Width="1.5" PointX="6.75" PointY="3.75" Height="2.4140429687499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MultiLearn.Data.Log.Keystrokes" Width="1.5" PointX="5.375" PointY="7.75" Height="1.5923063151041674" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

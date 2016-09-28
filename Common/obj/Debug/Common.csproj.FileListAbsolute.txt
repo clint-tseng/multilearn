@@ -1,0 +1,20 @@
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\bin\Debug\Common.dll.config
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\bin\Debug\Ionic.Zip.dll
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\bin\Debug\Ionic.Zip.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\obj\Debug\MultiLearn.UI.Splash.resources
+C:\Users\Administrator\Desktop\multimath\trunk\source\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\bin\Debug\Common.dll.config
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\bin\Debug\Common.dll
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\bin\Debug\Ionic.Zip.dll
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\bin\Debug\Ionic.Zip.pdb
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\obj\Debug\MultiLearn.UI.Splash.resources
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\obj\Debug\Common.csproj.GenerateResource.Cache
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\obj\Debug\Common.dll
+C:\Users\Administrator\My Documents\Visual Studio 2008\Projects\multimath\trunk\source\Common\obj\Debug\Common.pdb

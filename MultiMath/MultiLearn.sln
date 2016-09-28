@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiLearn", "MultiLearn.csproj", "{D66E86C1-2A48-415A-BA74-37E98535E9DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C4D1FDB-BA53-4229-9C86-5A369E1E74E5} = {6C4D1FDB-BA53-4229-9C86-5A369E1E74E5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{6C4D1FDB-BA53-4229-9C86-5A369E1E74E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "..\Dashboard\Dashboard.csproj", "{BE411349-F138-431A-B637-CD68D4F2EC2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D66E86C1-2A48-415A-BA74-37E98535E9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66E86C1-2A48-415A-BA74-37E98535E9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D66E86C1-2A48-415A-BA74-37E98535E9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D66E86C1-2A48-415A-BA74-37E98535E9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4D1FDB-BA53-4229-9C86-5A369E1E74E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4D1FDB-BA53-4229-9C86-5A369E1E74E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4D1FDB-BA53-4229-9C86-5A369E1E74E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4D1FDB-BA53-4229-9C86-5A369E1E74E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE411349-F138-431A-B637-CD68D4F2EC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE411349-F138-431A-B637-CD68D4F2EC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE411349-F138-431A-B637-CD68D4F2EC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE411349-F138-431A-B637-CD68D4F2EC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

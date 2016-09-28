@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D66E86C1-2A48-415A-BA74-37E98535E9DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MultiLearn</RootNamespace>
+    <AssemblyName>MultiMath</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context.cs" />
+    <Compile Include="Data\Logger.cs" />
+    <Compile Include="Data\MultimathLogger.cs" />
+    <Compile Include="Data\MultispellLogger.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Games\MultiMultiMath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\MultiMultiMath.Designer.cs">
+      <DependentUpon>MultiMultiMath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\MultiMathCoercionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Games\MultiMathCoercionPanel.Designer.cs">
+      <DependentUpon>MultiMathCoercionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\MultiMathTeamScoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\MultiMathTeamScoring.Designer.cs">
+      <DependentUpon>MultiMathTeamScoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Game.cs" />
+    <Compile Include="Games\MultiMath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\MultiMath.Designer.cs">
+      <DependentUpon>MultiMath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\MultiMathPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Games\MultiMathPanel.Designer.cs">
+      <DependentUpon>MultiMathPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\MultiMathTeamCoercion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\MultiMathTeamCoercion.Designer.cs">
+      <DependentUpon>MultiMathTeamCoercion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\MultiSpell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\MultiSpell.Designer.cs">
+      <DependentUpon>MultiSpell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\MultiSpellPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Games\MultiSpellPanel.Designer.cs">
+      <DependentUpon>MultiSpellPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\InputData.cs" />
+    <Compile Include="Input\InputLayer.cs" />
+    <Compile Include="Input\InputProxy.cs" />
+    <Compile Include="Input\Keypad.cs" />
+    <Compile Include="Input\KeypadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\KeypadForm.Designer.cs">
+      <DependentUpon>KeypadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\KeypadSync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\KeypadSync.Designer.cs">
+      <DependentUpon>KeypadSync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\KeypadSyncPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Input\KeypadSyncPanel.Designer.cs">
+      <DependentUpon>KeypadSyncPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\NumberOfPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\NumberOfPlayers.Designer.cs">
+      <DependentUpon>NumberOfPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\AvatarPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\AvatarPanel.Designer.cs">
+      <DependentUpon>AvatarPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\LoginPanel.Designer.cs">
+      <DependentUpon>LoginPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Games\MultiMultiMath.resx">
+      <DependentUpon>MultiMultiMath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\MultiMathCoercionPanel.resx">
+      <DependentUpon>MultiMathCoercionPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\MultiMathTeamScoring.resx">
+      <DependentUpon>MultiMathTeamScoring.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\MultiMath.resx">
+      <DependentUpon>MultiMath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\MultiMathPanel.resx">
+      <DependentUpon>MultiMathPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\MultiMathTeamCoercion.resx">
+      <DependentUpon>MultiMathTeamCoercion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\MultiSpell.resx">
+      <DependentUpon>MultiSpell.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games\MultiSpellPanel.resx">
+      <DependentUpon>MultiSpellPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\KeypadForm.resx">
+      <DependentUpon>KeypadForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\KeypadSync.resx">
+      <DependentUpon>KeypadSync.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\KeypadSyncPanel.resx">
+      <DependentUpon>KeypadSyncPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\NumberOfPlayers.resx">
+      <DependentUpon>NumberOfPlayers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\AvatarPanel.resx">
+      <DependentUpon>AvatarPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginPanel.resx">
+      <DependentUpon>LoginPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GameSelect.resx">
+      <DependentUpon>GameSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InputSelect.resx">
+      <DependentUpon>InputSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\StudentLogin.resx">
+      <DependentUpon>StudentLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PostGame.resx">
+      <DependentUpon>PostGame.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SetSelect.resx">
+      <DependentUpon>SetSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\Flash.resx">
+      <DependentUpon>Flash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.Config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\GameSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GameSelect.Designer.cs">
+      <DependentUpon>GameSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InputSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InputSelect.Designer.cs">
+      <DependentUpon>InputSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\StudentLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\StudentLogin.Designer.cs">
+      <DependentUpon>StudentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PostGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PostGame.Designer.cs">
+      <DependentUpon>PostGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SetSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SetSelect.Designer.cs">
+      <DependentUpon>SetSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Flash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\Flash.Designer.cs">
+      <DependentUpon>Flash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\InputDevice.cs" />
+    <Compile Include="Utilities\MathGenerator.cs" />
+    <Compile Include="Utilities\ProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6C4D1FDB-BA53-4229-9C86-5A369E1E74E5}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync7dim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync1dim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync3dim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync5dim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync7.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
